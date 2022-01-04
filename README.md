@@ -1,6 +1,5 @@
 # Loop Machine
 
-
 ### Create a 9 pad loop machine:
 
 1. Create 9 pads (squared) view with 2 states, on and off changed by click.
