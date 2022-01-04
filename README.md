@@ -1,15 +1,13 @@
-# Vite + React + Typescript + Eslint + Prettier
+# Loop Machine
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+### Create a 9 pad loop machine:
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
-
-## Installation
-
-Clone the repo and run `yarn install`
-
-## Start
-
-After the successfull installation of the packages: `yarn dev`
+1. Create 9 pads (squared) view with 2 states, on and off changed by click.
+2. Add play and stop buttons to control the global loop - they should stop/play all active loops immediately.
+3. Each square should present a loop sample
+4. All playing loops should start together at the same point - When a pad is turned on, it should start playing its loop on the next loop cycle, not immediately. Also, repeat the
+   loop as long as the pad is on.
+5. Make sure to avoid any delay in order to be synched
+6. When a pad is turned off, it should stop playing immediately.
+7. The provided loops are 8 seconds long.

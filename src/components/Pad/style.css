@@ -1,0 +1,75 @@
+.pad {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  box-shadow: 0 13px 6px -10px rgb(0 0 0 / 45%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.pad:hover {
+  box-shadow: 0 10px 15px -5px rgb(0 0 0 / 45%);
+}
+
+.pad .indicator {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.7);
+}
+
+.pad.is-playing .indicator {
+  background-color: #0eda0e;
+}
+
+.pad.is-pending .indicator {
+  animation-name: pending-indicator;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+.pad.is-stopped .indicator {
+  animation-name: stopped-indicator;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pending-indicator {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    background-color: #0eda0e;
+  }
+
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes stopped-indicator {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    background-color: #e02139;
+  }
+
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
