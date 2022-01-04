@@ -10,3 +10,11 @@
 5. Make sure to avoid any delay in order to be synched
 6. When a pad is turned off, it should stop playing immediately.
 7. The provided loops are 8 seconds long.
+
+
+## How to run
+
+1. clone this repo
+2. install all dependencies by running `yarn install`
+3. serve te application by running `yarn dev`
+4. the application will be available on http://localhost:3000/ 
